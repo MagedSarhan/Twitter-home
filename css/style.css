@@ -1,0 +1,375 @@
+
+/* Start Global Rulse  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --mainecolor:black;
+    --secondcolor:#ff6d5e;
+    --main-tramsition:0.4s;
+}
+html {
+    
+}
+body {
+    background-color: Var(--mainecolor);
+}
+/* .continer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 97px;
+    position: relative;
+}  */
+/* small */
+/* @media (min-width:768px) {
+    .continer {
+        width: 750px;
+    }
+} */
+/* mediuam */
+/* @media (min-width:992px) {
+    .continer {
+        width: 970px;
+    }
+} */
+/* larg */
+/* @media (min-width:1200px) {
+    .continer {
+        width: 1170px;
+    }
+} */
+a{
+    text-decoration: none;
+    color: #777;
+}
+.dot {
+    color: var(--secondcolor);
+}
+/* End  Global Rulse  */
+/* Start Header */
+.continer header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 15px 13%;
+    height: 100vh;
+    position: fixed;
+    width: 419px;
+    
+}
+.continer header .nav-links {
+    display: flex;
+    flex-direction: column;
+}
+.continer header .nav-links .nav-icons {
+    display: flex;
+    flex-direction: column;
+}
+.continer header .nav-links  a {
+    padding: 8px 25px 8px 8px;
+    font-size: 20px;
+    width: fit-content;
+    transition: var( --main-tramsition);
+
+}
+.continer header .nav-links .logo a{
+    padding: 8px 8px;
+
+}
+.continer header .nav-links  a:nth-child(2) {
+    font-weight: 600;
+}
+.continer header .nav-links  a:hover {
+   background-color: #77777747;
+    width: fit-content;
+    border-radius: 500px;
+}
+.continer header .nav-links span {
+    padding-left: 15px;
+}
+
+.continer header .nav-links button {
+    width: fit-content;
+    padding: 14px 88px;
+    border-radius: 21px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid var(--secondcolor);
+    transition: var(--main-tramsition);
+}
+.continer header .account a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    padding: 8px 25px 8px 8px;
+    transition: var(--main-tramsition);
+    margin-right: 10px;
+}
+.continer header .account a:hover {
+    background-color: #77777747;
+    width: fit-content;
+    border-radius: 500px;
+}
+.continer header .account .image {
+    width: 38px;
+    border-radius: 50%;
+}
+.continer header .account .image img {
+    width: 100%;
+    border-radius: 50%;
+}
+.continer header .account .text P:first-child {
+    color: var(--secondcolor);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.continer header .account .text P:last-child {
+    color: #777;
+}
+.continer header .account i {
+    color: var(--secondcolor);
+    margin-left: 25px;
+    cursor: pointer;
+}
+/* End Header */
+/* Start Main */
+main {
+    margin-left: 435px ;
+}
+main .continer {
+    display: flex;
+    width: 100%;
+}
+main .main-feed {
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    width: 50%;
+}
+.continer .main-bar {
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondcolor);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color:black;
+    z-index: 9;
+    
+}
+.continer .main-head {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
+
+}
+.continer .main-head a {
+    display: block;
+    width: 42px;
+    border-radius: 50%;
+}
+.continer .main-head a img {
+    width: 100%;
+    border-radius: 50%;
+}
+.continer .main-head input {
+    color: #777;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    padding: 3px;
+    caret-color: var(--secondcolor);
+    color: white;
+}
+.continer .main-head input::placeholder {
+    letter-spacing: 1px;
+}
+.continer .main-head input:focus {
+    outline: none;
+}
+.main-feed .main-upload {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 61px;
+}
+.main-feed .main-upload .icons a {
+    color: var(--secondcolor);
+    padding-right: 10px;
+}
+.main-feed .main-upload button {
+    padding: 6px 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--secondcolor);
+    transition: var(--main-tramsition);
+    color: white;
+}
+.main-tweet {
+    padding: 10px;
+}
+.main-tweet .head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #777;
+    padding: 10px 0;
+    position: relative;
+}
+.main-tweet .head img{
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.main-tweet .head p:nth-child(2){
+color: var(--secondcolor);
+margin-right: 5px;
+letter-spacing: 1px;
+}
+.main-tweet .head p:nth-child(3){
+color:#777;
+}
+.main-tweet .head i {
+    color: #777;
+    position: absolute;
+    right: 5px;
+    top: 22px;
+}
+.main-tweet .head p:nth-child(5){
+color:#fff;
+width: 100%;
+margin-left: 48px;
+line-height: 1.2;
+letter-spacing: 1px;
+}
+
+.main-tweet .foot {
+    padding: 10px 0 0 48px;
+}
+.main-tweet .foot ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.main-tweet .foot ul li i {
+    color: #777;
+    
+}
+/* Sart Side-feed */
+.side-feed {
+    padding: 10px;
+    max-width: 355px;
+    width: 100%;
+}
+.side-feed .sec {
+    padding: 10px 0;
+    letter-spacing: 0.9px;
+}
+.side-feed .search {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.side-feed .search input {
+    background-color: #212327;
+    padding: 10px 20px;
+    border-radius: 500px;
+    border: 1px solid #212327;
+    caret-color: var(--secondcolor);
+    width: 100%;
+}
+.side-feed .search input:focus {
+    outline: none;
+}
+.side-feed .happens {
+    background-color: #212327;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 14px;
+}
+.side-feed .happens h2 {
+    color: var(--secondcolor);
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.side-feed .happens .tran {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    align-items: center;
+}
+.side-feed .happens p {
+    color: #777;
+}
+.side-feed .happens .name {
+    color: var(--secondcolor);
+}
+.side-feed .happens .lin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.side-feed .happens .lin a {
+    display: block;
+    color: var(--secondcolor);
+    padding: 10px 0 0;
+    font-size: 14px;
+}
+/* End Side-feed */
+/* Start Follow */
+.follow {
+    background-color: #212327;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 14px;
+}
+.follow h2 {
+    color: var(--secondcolor);
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.accounts-follow .account-follow {
+    display: flex;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.accounts-follow .account-follow img {
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+} 
+.accounts-follow .account-follow .text p:first-child {
+color: var(--secondcolor);
+}
+.accounts-follow .account-follow .text p:last-child {
+    color: #777;
+}
+.accounts-follow .account-follow button {
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 10px;
+    border-radius: 15px;
+    border: 1px solid var(--secondcolor);
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+}
+/* End Follow */
+/* End Main */
